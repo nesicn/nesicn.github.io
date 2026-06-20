@@ -7,88 +7,101 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body { background-color: #0d1117; color: #c9d1d9; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; scroll-behavior: smooth; }
-        .glass-card { background: rgba(22, 27, 34, 0.7); backdrop-filter: blur(5px); border: 1px solid rgba(48, 54, 61, 0.7); border-radius: 1rem; transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; }
-        .glass-card:hover { transform: translateY(-5px); border-color: rgba(88, 166, 255, 0.5); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); }
-        .section-title { font-size: 2.5rem; font-weight: 800; text-align: center; color: white; margin-bottom: 2rem; position: relative; }
-        .section-title::after { content: ''; display: block; width: 100px; height: 3px; background: linear-gradient(to right, #007cf0, #00dfd8); margin: 0.5rem auto 0; border-radius: 3px; }
+        body { 
+            background-color: #0d1117; 
+            color: #c9d1d9; 
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; 
+            scroll-behavior: smooth; 
+        }
+        .glass-card { 
+            background: rgba(22, 27, 34, 0.7); 
+            backdrop-filter: blur(5px); 
+            border: 1px solid rgba(48, 54, 61, 0.7); 
+            border-radius: 1rem; 
+            transition: transform 0.3s ease, border-color 0.3s ease; 
+        }
+        .glass-card:hover { 
+            transform: translateY(-5px); 
+            border-color: rgba(88, 166, 255, 0.5); 
+        }
         .accent-text { color: #58a6ff; }
     </style>
 </head>
 <body>
 
-    <header class="w-full">
-        <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,3,12,19,27&height=300&section=header&text=Nesibe&fontSize=60&fontColor=ffffff&fontAlignY=35&desc=Computer%20Engineering%20Student%20%7C%20AI%20%26%20Data%20Science&descSize=20&descColor=ffffff&descAlignY=55&animation=fadeIn" alt="Header" class="w-full">
-    </header>
-
-    <main class="max-w-7xl mx-auto px-6 py-16">
-        
-        <section class="text-center mb-16">
-            <h1 class="text-5xl font-extrabold text-white mb-4">Turning Curiosity into Code and Data</h1>
-            <p class="text-xl leading-relaxed text-gray-400 max-w-3xl mx-auto">
-                Hi! I am a Computer Engineering student with a deep curiosity for Data Science and Artificial Intelligence. While building my foundational engineering skills at university, I actively pursue external courses and specialized training to dive deeper into data analysis and predictive modeling. Currently, I’m just trying to learn as much as I can about these areas.
+    <main class="w-full min-h-screen flex flex-col justify-center items-center px-6 text-center bg-gradient-to-b from-[#0d1117] to-[#161b22]">
+        <div class="max-w-3xl space-y-6">
+            <h1 class="text-6xl md:text-8xl font-extrabold text-white tracking-tight animate-fade-in">
+                Hi, I am <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#58a6ff] to-[#00dfd8]">Nesibe</span>
+            </h1>
+            <p class="text-lg md:text-xl leading-relaxed text-gray-400">
+                I am a Computer Engineering student with a deep curiosity for Data Science and Artificial Intelligence. While building my foundational engineering skills at university, I actively pursue external courses and specialized training to dive deeper into data analysis and predictive modeling. Currently, I’m just trying to learn as much as I can about these areas.
             </p>
-        </section>
+            <div class="pt-8">
+                <a href="#about" class="text-gray-500 hover:text-white transition text-sm font-medium uppercase tracking-widest block animate-bounce">
+                    Scroll Down <i class="fas fa-chevron-down ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </main>
 
-        <section id="fields" class="mb-20">
-            <h2 class="section-title"><i class="fas fa-sparkles mr-3"></i> Fields of Interest</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center max-w-4xl mx-auto">
-                <div class="glass-card p-8">
-                    <div class="text-5xl accent-text mb-6"><i class="fas fa-brain"></i></div>
-                    <h3 class="text-2xl font-bold mb-3 text-white">AI</h3>
-                    <p class="text-gray-400 leading-relaxed">I’m really interested in learning systems and exploring how deep learning models work.</p>
+    <div id="about" class="max-w-5xl mx-auto px-6 py-20 space-y-24">
+        
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <div class="glass-card p-8 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-[#58a6ff]"><i class="fas fa-graduation-cap mr-2"></i> Education Context</h3>
+                    <ul class="space-y-4 text-gray-300">
+                        <li>
+                            <span class="block font-semibold text-white">Computer Engineering</span>
+                            <span class="text-sm text-gray-500">[Your University Name]</span>
+                        </li>
+                        <li>
+                            <span class="block font-semibold text-white">AI & Data Science Track</span>
+                            <span class="text-sm text-gray-500">Europe Coding School</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="glass-card p-8">
-                    <div class="text-5xl accent-text mb-6"><i class="fas fa-chart-line"></i></div>
-                    <h3 class="text-2xl font-bold mb-3 text-white">Data Science</h3>
-                    <p class="text-gray-400 leading-relaxed">I’m practicing how to analyze, visualize, and extract meaningful insights from data.</p>
+            </div>
+
+            <div class="glass-card p-8">
+                <h3 class="text-xl font-bold mb-4 text-[#58a6ff]"><i class="fas fa-code mr-2"></i> Languages I Use</h3>
+                <p class="text-gray-400 text-sm mb-6">Building my foundation primarily around these ecosystem drivers:</p>
+                <div class="flex flex-wrap gap-3">
+                    <img src="https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+                    <img src="https://img.shields.io/badge/Java-000000?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
                 </div>
             </div>
+
         </section>
 
-        <section id="education" class="mb-20">
-            <div class="glass-card p-8 max-w-4xl mx-auto">
-                <h3 class="text-2xl font-bold mb-6 text-green-400"><i class="fas fa-graduation-cap mr-2"></i> Education</h3>
-                <ul class="space-y-4 text-gray-300">
-                    <li><strong>[Your University Name]:</strong> Computer Engineering</li>
-                    <li><strong>Europe Coding School:</strong> Artificial Intelligence & Data Science Specialization Track</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="languages" class="mb-20">
-            <h2 class="section-title">Languages</h2>
-            <div class="flex flex-wrap justify-center gap-4">
-                <img src="https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-                <img src="https://img.shields.io/badge/Java-000000?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
-            </div>
-        </section>
-
-        <section id="github" class="mb-20">
-            <h2 class="section-title">GitHub Analytics</h2>
+        <section id="github" class="space-y-6">
+            <h2 class="text-2xl font-bold text-white text-center">Activity Dashboard</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-items-center">
                 <img src="https://github-readme-stats.vercel.app/api?username=Nesicn&show_icons=true&theme=tokyonight&hide_border=true&bg_color=161b22&color=70a5fd" alt="Stats" class="w-full max-w-lg glass-card p-2">
                 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Nesicn&theme=tokyo-night&hide_border=true&bg_color=161b22&color=70a5fd&line=bf91f3" alt="Graph" class="w-full glass-card p-2">
             </div>
         </section>
 
-        <section id="contact" class="text-center p-12 glass-card max-w-4xl mx-auto">
-            <h2 class="text-4xl font-extrabold text-white mb-6">Get In Touch</h2>
-            <p class="text-xl text-gray-400 leading-relaxed max-w-2xl mx-auto mb-10">
-                Feel free to reach out if you want to collaborate on projects, discuss data tracks, or just talk about engineering!
+        <section id="contact" class="text-center p-12 glass-card max-w-3xl mx-auto">
+            <h2 class="text-3xl font-extrabold text-white mb-4">Get In Touch</h2>
+            <p class="text-gray-400 max-w-xl mx-auto mb-8">
+                Feel free to reach out if you want to chat about engineering tracks, core programming, or just connect!
             </p>
-            <div class="flex justify-center gap-8 text-4xl mb-12">
-                <a href="https://linkedin.com/in/Nesicn" target="_blank" class="accent-text hover:text-white transition"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Nesicn" target="_blank" class="text-gray-500 hover:text-white transition"><i class="fab fa-github"></i></a>
-                <a href="https://Nesicn.github.io" target="_blank" class="text-gray-700 hover:text-white transition"><i class="fas fa-globe"></i></a>
+            <div class="flex justify-center gap-8 text-3xl mb-8">
+                <a href="https://linkedin.com/in/Nesicn" target="_blank" class="text-gray-400 hover:text-[#58a6ff] transition"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Nesicn" target="_blank" class="text-gray-400 hover:text-white transition"><i class="fab fa-github"></i></a>
             </div>
-            <a href="mailto:[YOUR_EMAIL@example.com]" class="text-lg font-semibold bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-full transition shadow-lg">Send an Email</a>
+            <a href="mailto:[YOUR_EMAIL@example.com]" class="inline-block text-sm font-semibold bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full transition shadow-lg">
+                Send an Email
+            </a>
         </section>
 
-    </main>
+    </div>
 
-    <footer class="mt-20">
-        <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,3,12,19,27&height=150&section=footer" alt="Footer" class="w-full">
+    <footer class="text-center py-8 text-xs text-gray-600 border-t border-gray-800 bg-[#0d1117]">
+        &copy; 2026 Nesibe. Built with clean code and curiosity.
     </footer>
 
 </body>
